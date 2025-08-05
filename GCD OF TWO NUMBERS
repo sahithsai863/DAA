@@ -1,9 +1,11 @@
 #include <stdio.h>
-
 int main()
 {
-    int a = 24, b = 18, gcd, i;
-
+    int a,b,gcd,i;
+    printf("Enter the first digit:");
+    scanf("%d",&a);
+    printf("Enter the second digit:");
+    scanf("%d",&b);
     for (i = 1; i <= a && i <= b; i++)
     {
         if (a % i == 0 && b % i == 0)
@@ -11,8 +13,6 @@ int main()
             gcd = i;
         }
     }
-
-    printf("GCD = %d\n", gcd);
-
+    printf("The GCD of %d and %d is : %d\n",a,b, gcd);
     return 0;
 }
